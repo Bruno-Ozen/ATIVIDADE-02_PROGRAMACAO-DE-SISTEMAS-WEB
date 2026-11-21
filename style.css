@@ -8,17 +8,32 @@ body {
 
 #painel_lampada {
     background-color: #ffffff;
-    width: 450px;
-    height: 500px;
+    box-sizing: border-box;
+    width: min(450px, calc(100vw - 32px));
+    min-height: 500px;
     border-radius: 20px;
-
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+#painel_lampada h1,
+#painel_lampada h2 {
+    text-align: center;
+    margin: 12px 0;
+}
+
 #lampada {
-    width: 300px;
-    height: 300px;
-    margin-top: 50px;
-    margin-left: 120px;
+    width: 280px;
+    height: 280px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.botoes-lampada {
+    display: flex;
+    gap: 12px;
+    margin: 12px 0;
 }
