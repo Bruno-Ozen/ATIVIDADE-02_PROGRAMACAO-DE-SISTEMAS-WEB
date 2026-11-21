@@ -14,10 +14,14 @@
     <div id="painel_lampada">
         <h1>Minha Lâmpada</h1>
         <img id="lampada" src="lampada-apagada.png">
-        <h2>Lâmpada apagada!</h2>
+        <h2 id="estado-lampada">Lâmpada apagada!</h2>
         <div class="botoes-lampada">
-            <button id="botao" class="btn btn-success">Acender</button>
-            <button id="botao_desligar" class="btn btn-danger">Desligar</button>
+            <button id="botao" class="btn btn-success" onClick="ligarLampada()">
+                Acender
+            </button>
+            <button id="botao_desligar" class="btn btn-danger" onClick="desligarLampada()">
+                Desligar
+            </button>
         </div>
     </div>
 
